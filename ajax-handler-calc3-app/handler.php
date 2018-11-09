@@ -10,11 +10,6 @@ elseif (!is_numeric($array[height_banner]) OR !is_numeric($array[width_banner]))
   echo "Ширина и высота - только цифры!.";
 }
  else {
- 
-
-
-
-
 $array_options = [];
 foreach ($array as $key => $val) 
 {
@@ -22,22 +17,14 @@ if(stristr($val, 'check') == TRUE) {
 $array_options[] = $key;
 }
 }
-
-
-
-
-
- 
 /* Arrays */
 $arr = array(array(300,320,280),array(350,370,320),array(450,470,470),array(380,450,450),array(480,510,430),array(600,670,570),array(380,450,350));
 $array_h = array('banner330','banner440','banner_perforated','self_adhesive_skin','skin_perforated','canvas','paper');
 $array_w = array('720','1440','360'); 
 $array_costprice = array(50,60,150,70,150,250,100);
-
 /*
 print_r($array_price); 
 echo '<p> </p>'; */
-
 /* получаем цену продажи и себестоимость кв. метра , price & costprice  */
 $h              = array_search($array[height], $array_h);
 $w              = array_search($array[width], $array_w); 
@@ -45,9 +32,6 @@ $price = $arr[$h][$w];
 $costprice = $array_costprice[$h];
 
 $banner_area = $array[height_banner] * $array[width_banner];
-
-
-
 
 if (in_array("eyelets", $array_options)) {
     $eyelets = ($array[height_banner] * 2 + $array[width_banner] * 2) / 0.25 * 10;
@@ -83,10 +67,6 @@ $costprice_framing = ($array[height_banner] * 2 + $array[width_banner]) * 15;
     echo 'Монтаж рамки = ' . $framing . ' руб' . '</br>';
 }
 
-
-
-
-
 $price_banner = $banner_area * $price;
 
 /* себестоимость баннера: */
@@ -104,10 +84,3 @@ echo 'Себестоимость = ' . $costprice_total . ' руб' . '</br>';
 echo 'Прибыль = ' . $profit_total . ' руб' . '</br>';
 echo '% менеджера = ' . round($procent_manager, 2) . ' руб' . '</br>';
 }
-
-
-
-
-
-
-

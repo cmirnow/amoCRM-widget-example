@@ -72,4 +72,3 @@ if (empty($array[item_type])) {
   echo '--------------';
   echo '<div style="color: #ff0000;">' . 'Итого ' . $total . ' руб.' . '</div>';
 }
-
