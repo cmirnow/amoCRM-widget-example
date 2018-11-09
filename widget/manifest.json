@@ -1,0 +1,41 @@
+{
+    "widget":{
+            "name": "widget.name",
+            "description": "widget.description",
+            "short_description": "widget.short_description",
+            "code": "mics_calc_3",
+            "secret_key": "8854197c064afa2c25c1b6c0845513c95a793ff7533a2389d63545200599cdf1",
+            "version": "1.1.",
+            "interface_version": 2,
+            "init_once": false,
+            "locale":[
+                    "ru",
+                    "en"
+                    ],
+            "installation": true
+            },
+    "locations":[
+            "comcard-1",
+            "ccard-1",
+            "lcard-1",
+             "settings"
+            ],
+    "settings":{
+                "login":{
+                        "name": "settings.login",
+                        "type": "text",
+                        "required": false
+                        },
+                "api_key":{
+                        "name": "settings.api_key",
+                        "type": "text",
+                        "required": false
+                        },
+                "account":{
+                        "name": "settings.account",
+                        "type": "text",
+                        "required": false
+                        }
+            }
+}
+
